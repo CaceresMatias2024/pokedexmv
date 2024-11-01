@@ -1,0 +1,20 @@
+<button (click)="anteriorPokemon()">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeTJ5HL2wU3voMcJHfbVp8gOLACKQqMBElig&s">
+  </button>
+  
+  <img [src]="solicitarImagen">
+  
+  <!-- Texto de selección -->
+  <h3 class="select-title">Elige número de Pokémon</h3>
+  
+  <!-- Menú desplegable para seleccionar Pokémon -->
+  <select (change)="cambiarPokemon($event)">
+    <option value="">Selecciona un Pokémon</option>
+    <option *ngFor="let id of pokemonIds" [value]="id">{{ id }}</option>
+  </select>
+  
+  
+  <button (click)="siguientePokemon()">
+    <img src="https://cdn.icon-icons.com/icons2/1339/PNG/512/righarrow_87553.png">
+  </button>
+  

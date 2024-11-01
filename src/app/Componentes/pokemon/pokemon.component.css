@@ -1,0 +1,37 @@
+button {
+    background: none; /* Eliminar fondo del botón */
+    border: none;     /* Eliminar borde del botón */
+    padding: 0;       /* Eliminar padding del botón */
+    cursor: pointer;  /* Mostrar cursor de mano al pasar sobre el botón */
+  }
+  
+  button img {
+    width: 30px;  /* Ajustar el tamaño de la flecha */
+    height: 30px; /* Ajustar el tamaño de la flecha */
+  }
+  
+  /* Posicionar las flechas */
+  button:first-of-type { /* Selector para el botón anterior */
+    position: absolute;
+    left: 10px; /* Ajustar la posición a la izquierda */
+    top: 50%;
+    transform: translateY(-50%); /* Centrar verticalmente */
+  }
+  
+  button:last-of-type { /* Selector para el botón siguiente */
+    position: absolute;
+    right: 10px; /* Ajustar la posición a la derecha */
+    top: 50%;
+    transform: translateY(-50%); /* Centrar verticalmente */
+  
+  }
+  .select-title {
+    font-family: 'Arial', sans-serif; /* Cambia la fuente si deseas */
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centrar el texto */
+    margin: 10px 0; /* Espaciado arriba y abajo */
+    color: #4CAF50; /* Color verde (puedes cambiarlo) */
+}
+
+  

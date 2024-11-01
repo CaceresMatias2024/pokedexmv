@@ -1,0 +1,17 @@
+<div class="health-container">
+  <h3>Vida</h3> <!-- Texto de Vida -->
+  <span *ngFor="let heart of hearts">❤️</span>
+</div>
+
+<div class="defense-container">
+  <h3>Defensa</h3> <!-- Texto de Defensa -->
+  <span *ngFor="let shield of [].constructor(defense)">🛡️</span> <!-- Emoji de escudo -->
+</div>
+
+<div class="speed-container">
+  <h3>Velocidad</h3> <!-- Texto de Velocidad -->
+  <span *ngFor="let bolt of [].constructor(speed)">⚡</span> <!-- Emoji de rayo -->
+</div>
+
+<button class="attack-button" (click)="removeHeart()">Atacado</button>
+<button class="recover-button" (click)="addHeart()">Recuperado</button>

@@ -1,0 +1,20 @@
+.attack-button {
+    display: block; /* Hace que el botón ocupe todo el ancho disponible */
+    margin: 10px auto; /* Margen superior e inferior de 10px, y centrado horizontalmente */
+    width: fit-content;
+  }
+  .recover-button {
+    display: block; /* Hace que el botón ocupe todo el ancho disponible */
+    margin: 10px auto; /* Margen superior e inferior de 10px, y centrado horizontalmente */
+    width: fit-content;
+  }
+  .health-container, .defense-container, .speed-container {
+    text-align: center; /* Centrar el texto */
+    margin: 10px 0; /* Espacio entre secciones */
+  }
+  
+  h3 {
+    margin: 0; /* Quitar margen del encabezado */
+  }
+  
+  

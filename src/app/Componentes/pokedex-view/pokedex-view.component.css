@@ -1,0 +1,81 @@
+.pokedex-view{
+    height: 100vh;
+    width: 365px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color:blanchedalmond;
+    padding:20px;
+    overflow:hidden;
+    gap:20px;
+}
+.container{
+    width:90%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.pokemon{
+    border-top-left-radius: 50px;
+}
+.grafico{
+    border-bottom-right-radius: 50px;
+}
+.point{
+    position: absolute;
+  bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+  width: 20px; /* Ajusta el tamaño de los puntos */
+  height: 20px;
+  border-radius: 50%; /* Para hacerlos circulares */
+  background-color: red;
+}
+.point:nth-child(1){
+    left:calc(50% + 40px);
+}
+.point:nth-child(2){
+    left:calc(50% - 40px);
+}
+.square{
+    position:absolute;
+    height:20px;
+    width:30px;
+    background-color:grey;
+    bottom:10px;
+    right:10px;
+}
+button {
+    display: block;
+    margin: 20px auto; /* Centra el botón horizontal y verticalmente */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor en forma de mano */
+  }
+  .container.pokemon {
+    position: relative; /* Para posicionar los puntos dentro del contenedor */
+    /* ...otros estilos... */
+  }
+  .color-button {
+    display: block;
+    margin: 20px auto; /* Centra el botón horizontalmente */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor en forma de mano */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+}
+
+.color-button:hover {
+    background-color: #45a049; /* Color de fondo al pasar el mouse */
+}
+
+  
+  

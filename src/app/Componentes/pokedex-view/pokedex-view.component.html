@@ -1,0 +1,25 @@
+<header>
+    <span class="white-circle"></span>
+</header>
+
+<section class="pokedex-view">
+    <span class="white-circle">
+        <span class="blue-circle"></span>
+    </span>
+    <span class="Line"></span>
+
+    <div class="container pokemon">
+        <app-pokemon [solicitarImagen]="pokemonImagen"
+        (clickPokemon)="handlePokemon($event)"></app-pokemon>
+        
+        <span class="point"></span>
+        <span class="point"></span>
+        <div class="square"></div>
+    </div>
+
+    <div class="container grafico">
+        <app-grafico></app-grafico>
+    </div>
+
+    <button (click)="cambiarColor()">Cambiar Color</button> <!-- Botón para cambiar color -->
+</section>
